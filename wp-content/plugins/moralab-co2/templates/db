@@ -1,0 +1,14 @@
+
+
+
+post_type = tree
+post_name = [tree name]
+taxonomies = [tree types]
+meta_key = 
+
+
+
+
+post_type = emission
+post_name = [year] -> UNIQUE ID
+meta_key = 

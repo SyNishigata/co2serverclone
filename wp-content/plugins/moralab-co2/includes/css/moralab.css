@@ -1,0 +1,167 @@
+/* MoraLab CSS Styles */
+.content { max-width: 900px; margin: 10px auto 20px;}
+.button-group {font-size: 15px;}
+a.button {font-size:13px;text-decoration:blink; padding: 8px;}
+a.button.radius {border-radius:3px;}
+a.button:hover, a.accordion-title:hover {text-decoration: none;}
+/*text[text-anchor="end"] {display: none;}*/
+
+
+/* buttons */
+li.list-button, li.grid-th { display: inline-block;}
+
+img.th {
+    /* display: inline-block; */
+    width: 75px;
+    height: 75px;
+}
+
+/* thumbnail grid */
+
+[class*="block-grid-"] {
+    display: block;
+    padding: 0;
+    margin: 0 -0.55556rem;
+}
+
+select {
+	height: inherit;
+}
+
+.accordion-title {
+    background-color: #e6e6e6;
+    font-size: initial;
+    font-weight: 500;
+    border-bottom-color: white;
+}
+
+.accordion li {
+	list-style: none;
+}
+
+.accordion-title:before, .accordion-title:after, .is-active>.accordion-title:before{
+    content: none;
+}
+
+ul.accordion {
+    margin: 0 auto;
+}
+
+select.form-select {
+    margin-bottom: 10px;
+}
+
+a.button.pull-right {
+    margin: 3px 3px 0px;
+    height: 100%;
+    display: inline-block;
+}
+
+.panel-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.columns:last-child:not(:first-child) {
+    float: left;
+}
+
+img#featured_img {
+    margin: auto;
+}
+
+.tabs-title.box>a {
+    padding: 0;
+}
+
+.tabs-content {
+    border-top: 1px solid #e6e6e6;
+}
+
+.tabs-title a:hover {
+    text-decoration: none;
+}
+
+.tabs-content.home-tabs {
+    border: none;
+}
+
+.summary{
+    height: 150px;
+}
+
+#busmap, #trainmap, #planemap {
+    width: 350px;
+    height: 250px;
+}
+
+.avatar-list {
+    width: 19%;
+    display: inline-block;
+    margin: auto;
+    /* padding: 0; */
+}
+
+#members {
+    text-align: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.summary-tree, .summary-carbon{
+    /*padding-top: 20px*/
+}
+
+.summary-head {
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+ }
+
+ .carbon-summary {
+    padding-bottom: 15px;
+ }
+
+  .carbon {
+    min-height: 250px;
+ }
+ 
+ .summary-detail {
+ min-height:75px;
+ }
+
+#info { min-height: 280px}
+
+.image-container { margin: 0 auto; text-align: center;}
+
+.rank-badge {margin: 0 auto; height: 150px; width: auto; background-size: auto 150px; background-repeat: no-repeat; background-position: center; }
+
+/* rank number position */
+.rank-badge { color: coral; font-size: 30px; font-weight: 900; line-height: 105px; text-align: center;}
+
+.rank-badge img {width:auto; height: 150px; }
+
+.rank-bage span { text-align: center; }
+
+.tabs-panel {    padding: 0 1rem;
+}
+.panel-container { margin: 0 auto 20px;}
+
+.in-line { display: inline-flex; padding: 10px; } 
+
+/* Tabs for showing Google Map */
+.tabs-panel {
+    position: absolute;
+    left: -9999px;
+    display: inherit !important;
+}
+
+.tabs-panel.is-active {
+    position: relative;
+    left: 0px !important;
+    display: inherit !important;
+}

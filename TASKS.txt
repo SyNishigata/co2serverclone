@@ -1,0 +1,11 @@
+* Work on front end and fix broken links, typos, etc.
+
+* Fix Food Page's huge input boxes
+
+* Add icons for the Plant Trees page and other pages (perhaps like the food page)
+
+* If isVegetarian is clicked, then don't show the other foods
+
+* On Rankings page, add a drop down menu for all the separate competitions and have carousels associated with those drop down menu options
+
+* Check insurance pages online (maybe like Geico?) for examples on how we should be conducting surveys. Camilo says they do theirs well or something.

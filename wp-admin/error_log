@@ -1,0 +1,77 @@
+[11-Jan-2016 23:09:47 UTC] WordPress database error Column 'post_content' cannot be null for query INSERT INTO `wp_posts` (`post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_content_filtered`, `post_title`, `post_excerpt`, `post_status`, `post_type`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_parent`, `menu_order`, `post_mime_type`, `guid`) VALUES (2, '2016-01-11 23:09:47', '2016-01-11 23:09:47', NULL, '', '', '', 'publish', 'templatera', 'closed', 'closed', '', '', '', '', '2016-01-11 23:09:47', '2016-01-11 23:09:47', 0, 0, '', '') made by require_once('wp-admin/admin.php'), do_action('appearance_page_install-required-plugins'), call_user_func_array, TGM_Plugin_Activation->install_plugins_page, TGMPA_List_Table->process_bulk_actions, TGMPA_Bulk_Installer->bulk_install, TGMPA_Bulk_Installer->run, WP_Upgrader->run, WP_Upgrader->install_package, apply_filters('upgrader_post_install'), call_user_func_array, TGMPA_Bulk_Installer->auto_activate, activate_plugin, do_action('activate_templatera/templatera.php'), call_user_func_array, VcTemplateManager::install, VcTemplateManager::create, wp_insert_post
+[15-Jan-2016 05:05:09 UTC] PHP Warning:  file_put_contents(/home/twelvefu/subdomains/trueinnov/co2/wp-content/uploads/userpro/.htaccess): failed to open stream: No such file or directory in /home/twelvefu/subdomains/trueinnov/co2/wp-content/plugins/userpro/functions/api.php on line 2012
+[04-Feb-2016 06:41:04 UTC] WordPress database error Incorrect table name '' for query SHOW FULL COLUMNS FROM `` made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/jupiter/functions.php'), Theme->init, Theme->theme_activated, mk_purge_cache_actions, Mk_Static_Files::delete_global_assets, Mk_Static_Files::jupiter_delete_row
+[04-Feb-2016 06:44:22 UTC] WordPress database error Incorrect table name '' for query SHOW FULL COLUMNS FROM `` made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/jupiter/functions.php'), Theme->init, Theme->theme_activated, mk_purge_cache_actions, Mk_Static_Files::delete_global_assets, Mk_Static_Files::jupiter_delete_row
+[05-Feb-2016 01:00:42 UTC] WordPress database error Incorrect table name '' for query SHOW FULL COLUMNS FROM `` made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/jupiter/functions.php'), Theme->init, Theme->theme_activated, mk_purge_cache_actions, Mk_Static_Files::delete_global_assets, Mk_Static_Files::jupiter_delete_row
+[18-Feb-2016 02:44:52 UTC] 
+[18-Feb-2016 02:57:30 UTC] 
+[22-Feb-2016 21:14:56 UTC] 
+[05-Mar-2016 09:11:33 UTC] image.jpg
+[05-Mar-2016 09:11:33 UTC] image.jpg
+[08-Mar-2016 15:33:44 UTC] PHP Parse error:  syntax error, unexpected 'count' (T_STRING), expecting '(' in /home/twelvefu/subdomains/trueinnov/co2/wp-content/plugins/moralab-co2/includes/ajax-process.php on line 222
+[28-Mar-2016 11:54:08 UTC] 2016
+[28-Mar-2016 12:03:17 UTC] 6:-2.97
+[28-Mar-2016 12:03:36 UTC] 2016
+[28-Mar-2016 12:03:36 UTC] 6:-36.53
+[28-Mar-2016 14:43:36 UTC] 2016
+[28-Mar-2016 14:43:36 UTC] 6:0.55
+[28-Mar-2016 17:40:31 UTC] 6:-4.63
+[28-Mar-2016 17:41:58 UTC] 6:0.55
+[28-Mar-2016 19:39:53 UTC] 6:-4.63
+[28-Mar-2016 19:48:24 UTC] 6:-4.4
+[29-Mar-2016 01:43:31 UTC] 4:-1.87
+[29-Mar-2016 01:53:53 UTC] 4:-2.1
+[29-Mar-2016 01:53:56 UTC] 4:-2.1
+[29-Mar-2016 01:53:58 UTC] 4:-2.1
+[29-Mar-2016 01:55:25 UTC] 2016
+[29-Mar-2016 01:55:25 UTC] 6:-4.4
+[29-Mar-2016 01:57:46 UTC] 2016
+[29-Mar-2016 01:57:46 UTC] 4:-4.45
+[29-Mar-2016 01:57:47 UTC] 2016
+[29-Mar-2016 01:57:47 UTC] 4:-4.45
+[29-Mar-2016 05:04:11 UTC] 2016
+[29-Mar-2016 05:04:11 UTC] 6:-15.12
+[29-Mar-2016 05:07:10 UTC] 0
+[29-Mar-2016 05:07:26 UTC] 2016
+[29-Mar-2016 05:07:26 UTC] 7:-46.45
+[29-Mar-2016 05:08:43 UTC] 7:-46.22
+[29-Mar-2016 08:33:13 UTC] 2016
+[29-Mar-2016 08:33:13 UTC] 6:-15.12
+[29-Mar-2016 08:35:32 UTC] 2016
+[29-Mar-2016 08:35:32 UTC] 6:-3.29
+[29-Mar-2016 08:35:53 UTC] 6:1.89
+[30-Mar-2016 08:36:32 UTC] 2016
+[30-Mar-2016 08:36:32 UTC] 6:1.89
+[30-Mar-2016 08:51:06 UTC] 6:1.66
+[31-Mar-2016 02:44:28 UTC] 2016
+[31-Mar-2016 02:44:28 UTC] 7:-46.22
+[31-Mar-2016 02:54:15 UTC] 2016
+[31-Mar-2016 02:54:15 UTC] 7:-46.22
+[31-Mar-2016 03:04:07 UTC] 2016
+[31-Mar-2016 03:04:07 UTC] 1:-9.52
+[31-Mar-2016 05:49:33 UTC] 2016
+[31-Mar-2016 05:49:33 UTC] 6:1.66
+[31-Mar-2016 05:50:40 UTC] 6:-3.52
+[31-Mar-2016 05:51:54 UTC] 2016
+[31-Mar-2016 05:51:54 UTC] 6:-72.28
+[01-Apr-2016 07:11:00 UTC] 2016
+[01-Apr-2016 07:11:00 UTC] 6:-3.52
+[02-Apr-2016 01:21:58 UTC] 0
+[02-Apr-2016 01:22:19 UTC] 3:-3.77
+[03-Apr-2016 06:12:30 UTC] 6:1.66
+[03-Apr-2016 18:20:30 UTC] 7:-46.45
+[04-Apr-2016 07:26:59 UTC] 6:-3.52
+[04-Apr-2016 07:32:08 UTC] 0
+[04-Apr-2016 07:32:55 UTC] 2016
+[04-Apr-2016 07:32:55 UTC] 8:-2.1
+[04-Apr-2016 07:33:36 UTC] 2016
+[04-Apr-2016 07:33:36 UTC] 8:-1.8
+[04-Apr-2016 07:34:22 UTC] 8:3.38
+[04-Apr-2016 19:00:37 UTC] 2016
+[04-Apr-2016 19:00:37 UTC] 7:-48.18
+[04-Apr-2016 19:01:26 UTC] 7:-43
+[04-Apr-2016 23:12:56 UTC] 2016
+[04-Apr-2016 23:12:56 UTC] 7:-43
+[04-Apr-2016 23:20:22 UTC] 6:1.66
+[04-Apr-2016 23:20:38 UTC] 2016
+[04-Apr-2016 23:20:38 UTC] 6:-67.1
