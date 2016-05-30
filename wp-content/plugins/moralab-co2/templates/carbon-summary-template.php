@@ -45,20 +45,7 @@ get_header(); ?>
         	
         	<div class="row carbon-summary">   
 
-        		<!-- Summary -->
-        		<div class="small-12 medium-12 large-12 columns">
-        			<div class="section group">
-						<div class="section-title">
-							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
-						</div>
-						<div id="data-bar-graph" style="width:100%; height:350px; margin: 0 auto; margin-left:-15px;"></div>
-					</div>
-        		</div>
-        	</div>
-
-        	<div class="row carbon-summary">
-			
-				<div class="small-12 medium-4 large-4 columns">
+        		<div class="small-12 medium-6 large-6 columns">
         			<div class="section group">
 						<div class="section-title">
 							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
@@ -74,7 +61,20 @@ get_header(); ?>
 					</div>
         		</div>
 
-        		<div class="small-12 medium-4 large-4 columns carbon">
+        		<!-- Summary -->
+        		<div class="small-12 medium-6 large-6 columns">
+        			<div class="section group">
+						<div class="section-title">
+							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
+						</div>
+						<div id="data-bar-graph" style="width:100%x; height:200px; margin: 0 auto; margin-left:-15px;"></div>
+					</div>
+        		</div>
+        	</div>
+
+        	<div class="row carbon-summary">
+
+        		<div class="small-12 medium-6 large-6 columns carbon">
         			<div class="section group">
         				<div class="summary">
         					<div class="summary-head"><img src="<?php echo INCLUDES_URL.'/img/plant-tree.png';?>" width="100px" height="auto"></div>
@@ -106,7 +106,7 @@ get_header(); ?>
         		</div>
 
 
-        		<div class="small-12 medium-4 large-4 columns carbon" style="height:inherit">
+        		<div class="small-12 medium-6 large-6 columns carbon" style="height:inherit">
         			<div class="section group">
 						<div class="section-title">
 							

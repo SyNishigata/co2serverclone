@@ -33,12 +33,7 @@ function get_bar_graph(id, data) {
     //              {name: 'furniture & appliances', data: [5,0],color:colors['goods']},
     //              {name: 'clothing', data: [3,0],color:colors['goods']}];
 
-	
-	// Begin Sy's Edits
-
-
-	/* Sy's Edits: commented out the old graph */
-    /*jQuery(id).highcharts({
+	jQuery(id).highcharts({
 
 		chart: {type: 'column',marginRight: 0},
 		legend: {enabled: false},
@@ -52,9 +47,19 @@ function get_bar_graph(id, data) {
 		             },
         series: data
     });
-	*/
-	
-	/* Sy's Edits: new graph format */
+
+}
+
+// Begin Sy's Edits
+
+/* Sy's Edits: Function to create the expanded bar graph */
+function get_expanded_bar_graph(id, data) {
+
+    if (data == null){
+        data = [{name: '', data: [0, 0],color: colors['green']}, 
+                {name: '', data: [0,0],color:colors['blue']}
+               ];
+    }
 	
 	/**
 	 * Sand-Signika theme for Highcharts JS
@@ -76,7 +81,7 @@ function get_bar_graph(id, data) {
 
 
 	Highcharts.theme = {
-	   colors: ["#a6cee3", "#1f78b4", "#b2df8a", "#377eb8"],
+	   colors: ["#81ba6a", "#9aebf6", "#69d8d6", "#15a6a9", '#166c96'],   // Colors for the data columns
 	   chart: {
 		  backgroundColor: null,
 		  style: {
@@ -230,11 +235,9 @@ function get_bar_graph(id, data) {
 		},
         series: data
     });
-	
-	// End Sy's Edits
-
 }
 
+// End Sy's Edits
 
 function tree_sequestered() {
 

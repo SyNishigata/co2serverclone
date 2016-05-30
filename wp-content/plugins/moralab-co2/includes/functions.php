@@ -151,6 +151,21 @@ function graph_script() {
 		</script><?php
 }
 
+// Begin Sy's Edits:
+
+/* Sy's Edits: Added a new function for the expanded graph */
+function expanded_graph_script() {
+	?><script>
+			jQuery(function ($) {
+				var chart_id = '#expanded-data-bar-graph';
+				var data = <?php echo json_encode(get_expanded_chart_data()); ?>;
+   				get_expanded_bar_graph(chart_id, data);
+			});
+		</script><?php
+}
+
+//End Sy's Edits
+
 function tree_sequestered() {
 	echo "<script>
 			jQuery(function ($) {
@@ -262,13 +277,8 @@ function get_chart_data(){
 	$trees = get_posts( $tree_args );
 
 	$data = array();
-	
-	
-	// Begin Sy's Edits 
 
-	
-	/* Sy's Edits: Commeted out this old data format [x, y] */
-	/*foreach( $trees as $tree ) {
+	foreach( $trees as $tree ) {
 		$tdata = array(
 			"name" => $tree->post_title
 			, "data" => [0, floatval(get_post_meta( $tree->ID, 'sequestered', true ))]
@@ -309,20 +319,20 @@ function get_chart_data(){
 		));
 
 	}
-	*/
+
+	return $data;
+}
+
+// Begin Sy's Edits 
 	
-	/* Sy's Edits: New data format [w, x, y, z] */
-	// foreach( $trees as $tree ) {
-		// $tdata = array(
-			// "name" => $tree->post_title
-			// , "data" => [0, floatval(get_post_meta( $tree->ID, 'sequestered', true )), 0, 0]
-			// , "color" => $colors['tree']
-		// );
-		// array_push($data, $tdata);
-	// }
+/* Sy's Edits: Added a new function to get the expanded chart data */
+function get_expanded_chart_data(){
+	global $current_user;
+	get_currentuserinfo();
+
+	$data = array();
 
 	$co2_args = array('post_type' => 'emission','author' => $current_user->ID, 'post_title' => date('Y'));
-
 
 	$emissions = get_posts( $co2_args );
 	foreach( $emissions as $emission ) {
@@ -335,96 +345,80 @@ function get_chart_data(){
 		array_push($data, array(
 			"name" => 'Car'
 			, "data" => [floatval($travel['car']), 0, 0, 0]
-			//, "color" => $colors['travel']
 		));
 		array_push($data, array(
 			"name" => 'Motorcycle'
 			, "data" => [floatval($travel['mcycl']), 0, 0, 0]
-			//, "color" => $colors['travel']
 		));
 		array_push($data, array(
 			"name" => 'Bus'
 			, "data" => [floatval($travel['bus']), 0, 0, 0]
-			//, "color" => $colors['travel']
 		));
 		array_push($data, array(
 			"name" => 'Train'
 			, "data" => [floatval($travel['train']), 0, 0, 0]
-			//, "color" => $colors['travel']
 		));
 		array_push($data, array(
 			"name" => 'Plane'
 			, "data" => [floatval($travel['plane']), 0, 0, 0]
-			//, "color" => $colors['travel']
 		));
 		
 		// Adding home data to array
 		array_push($data, array(
 			"name" => 'Electric'
 			, "data" => [0, floatval($home['electric']) / floatval($home['household']), 0, 0]
-			//, "color" => $colors['home']
 		));
 		array_push($data, array(
 			"name" => 'Natural Gas'
 			, "data" => [0, floatval($home['natural_gas']) / floatval($home['household']), 0, 0]
-			//, "color" => $colors['home']
 		));
 		array_push($data, array(
 			"name" => 'Propane Fuel'
 			, "data" => [0, floatval($home['propane_fuel']) / floatval($home['household']), 0, 0]
-			//, "color" => $colors['home']
 		));
 		array_push($data, array(
 			"name" => 'Water'
 			, "data" => [0, floatval($home['water']) / floatval($home['household']), 0, 0]
-			//, "color" => $colors['home']
 		));
 		
 		// Adding food data to array
-		//***************FIX THIS: WHAT IS GENERAL DIET SUPPOSED TO BE CALLED? (THE 0.9 padding)*************
+		//***************FIX THIS: WHAT IS 'GENERAL DIET' SUPPOSED TO BE CALLED? (THE 0.9 padding)*************
 		array_push($data, array(
 			"name" => 'Lamb'
 			, "data" => [0, 0, floatval($food['lamb'])*0.11*52*3.92*0.001, 0]
-			//, "color" => $colors['food']
 		));
 		array_push($data, array(
 			"name" => 'Beef'
 			, "data" => [0, 0, floatval($food['beef'])*0.11*52*27*0.001, 0]
-			//, "color" => $colors['food']
 		));
 		array_push($data, array(
 			"name" => 'Pork'
 			, "data" => [0, 0, floatval($food['pork'])*0.11*52*12.1*0.001, 0]
-			//, "color" => $colors['food']
 		));
 		array_push($data, array(
 			"name" => 'Fish'
 			, "data" => [0, 0, floatval($food['fish'])*0.11*52*11.9*0.001, 0]
-			//, "color" => $colors['food']
 		));
 		array_push($data, array(
 			"name" => 'Poultry'
 			, "data" => [0, 0, floatval($food['poultry'])*0.11*52*6.9*0.001, 0]
-			//, "color" => $colors['food']
 		));
 		array_push($data, array(
 			"name" => 'General Diet'
 			, "data" => [0, 0, 0.9, 0]
-			//, "color" => $colors['food']
 		));
 		
 		// Adding recycle data to array
 		array_push($data, array(
 			"name" => 'Waste'
 			, "data" => [0, 0, 0, floatval($recycle['co2_recycle'])]
-			//, "color" => $colors['recycle']
 		));
 	}
 	
-	// End Sy's Edits
-	
 	return $data;
 }
+
+// End Sy's Edits
 
 function get_total_sequestered(){
 	global $current_user;
