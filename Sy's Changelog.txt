@@ -1,6 +1,8 @@
 co2serverclone:
 
+
 Added pages: 
+
 - pathways (based on /my-carbon)
 - tips
 - travel-tips
@@ -9,12 +11,17 @@ Added pages:
 - waste-tips
 - competitions
 
+
+
 Added files:
-carbon-competitions-template.php
 
-Changed files:
+- C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
 
-// Remove '\xampp\htdocs'
+- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
+
+
+
+Changed files: // Remove '\xampp\htdocs'
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\co2.js
 - line 53
