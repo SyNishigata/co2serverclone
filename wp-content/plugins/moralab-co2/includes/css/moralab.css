@@ -8,7 +8,7 @@ a.button:hover, a.accordion-title:hover {text-decoration: none;}
 
 
 /* Begin Sy's Edits */
-.graphbreakdown:hover {
+.expandedgraph:hover {
 	text-decoration: underline;
 }
 /* End Sy's Edits */
