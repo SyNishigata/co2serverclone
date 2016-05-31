@@ -30,5 +30,12 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\functions
 - line 154
 - line 326
 
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\css\moralab.css
+- line 10
+
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-summary-template.php
+- line 68
+- line 153
+
 
 

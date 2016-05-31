@@ -64,6 +64,13 @@ get_header(); ?>
         		<!-- Summary -->
         		<div class="small-12 medium-6 large-6 columns">
         			<div class="section group">
+					
+							<!-- Begin Sy's Edits: Added graph breakdown link -->
+							<a class="graphbreakdown" style="color: #0000EE; margin:0 0 20px; font-size:12px;">
+								<center>Click here for a breakdown of your emissions and tips to reduce them</center>
+							</a> 
+							<!-- End Sy's Edits -->
+							
 						<div class="section-title">
 							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
 						</div>
@@ -142,6 +149,15 @@ get_header(); ?>
 <script>
 jQuery(function ($) {
     $('#mk-page-introduce').hide();
+	
+	// Begin Sy's Edits
+	
+	/* Sy's Edits: Added function for graph breakdown link */
+	$(".graphbreakdown").on("click", function(){
+     	window.location = "<?php echo get_home_url().'/my-carbon/expanded-graph'?>";
+    });
+	
+	// End Sy's Edits
 
     $(".myrank").on("click", function(){
      	window.location = "<?php echo get_home_url().'/my-carbon/ranking'?>";

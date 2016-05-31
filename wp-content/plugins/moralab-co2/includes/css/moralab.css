@@ -7,6 +7,13 @@ a.button:hover, a.accordion-title:hover {text-decoration: none;}
 /*text[text-anchor="end"] {display: none;}*/
 
 
+/* Begin Sy's Edits */
+.graphbreakdown:hover {
+	text-decoration: underline;
+}
+/* End Sy's Edits */
+
+
 /* buttons */
 li.list-button, li.grid-th { display: inline-block;}
 
