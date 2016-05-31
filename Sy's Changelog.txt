@@ -10,6 +10,7 @@ Added pages:
 - food-tips
 - waste-tips
 - competitions
+- expanded-graph
 
 
 
@@ -18,6 +19,11 @@ Added files:
 - C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
 
 - C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
+
+- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-competitions.php
+
+- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-expanded-graph.php
+
 
 
 
