@@ -16,9 +16,9 @@ Added pages:
 
 Added files:
 
-- C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
-
 - C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
+
+- C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
 
 - C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-competitions.php
 
@@ -42,6 +42,14 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\css\moral
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-summary-template.php
 - line 68
 - line 153
+
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\carbon.js
+- line 470
+- line 481
+
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\food-form.php
+- line 9
+- line 23
 
 
 

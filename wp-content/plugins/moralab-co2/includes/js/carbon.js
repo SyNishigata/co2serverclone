@@ -467,14 +467,49 @@ function carbon_food(){
     var pork = isNaN(parseFloat(document.getElementById('pork').value)) ? 0.0:parseFloat(document.getElementById('pork').value)*0.11*52;
     var fish = isNaN(parseFloat(document.getElementById('fish').value)) ? 0.0:parseFloat(document.getElementById('fish').value)*0.11*52;
     var poultry = isNaN(parseFloat(document.getElementById('poultry').value)) ? 0.0:parseFloat(document.getElementById('poultry').value)*0.11*52;
-    var veggies = (document.getElementById('veggies').value);
-
+	// Begin Sy's Edits: Commented out this variable
+	// var veggies = (document.getElementById('veggies').value);
+	// End Sy's Edits
+	
     food = 0.9 + (lamb*3.92*0.001) + (beef*27*0.001) + (pork*12.1*0.001) + (fish*11.9*0.001) + (poultry*6.9*0.001);
     jQuery('#co2_food').val(food.toFixed(2));
     document.getElementById("food").innerHTML = food.toFixed(2);
     jQuery('#disfood').hide();
     jQuery('#andifood').show();
 }
+
+// Begin Sy's Edits
+
+/* Function for the 'veggies' radio button selection */
+function carbon_veggies(){
+	var food = 0.9;
+
+	/* If vegetarian is checked, then hide all the other food inputs and
+	 * reset all of their values to 0
+	 */
+	if(jQuery('#veggiesyes').is(':checked')) {
+		jQuery('#lamb').val("0");
+		jQuery('#beef').val("0");
+		jQuery('#pork').val("0");
+		jQuery('#fish').val("0");
+		jQuery('#poultry').val("0");
+		
+		jQuery('#hiddenfoodinput').hide();
+
+	}
+	
+	/* If vegetarian is not checked, then show all the other food inputs */
+	if(jQuery('#veggiesno').is(':checked')) {
+		jQuery('#hiddenfoodinput').show();
+	}
+
+    jQuery('#co2_food').val(food.toFixed(2));
+    document.getElementById("food").innerHTML = food.toFixed(2);
+    jQuery('#disfood').hide();
+    jQuery('#andifood').show();
+}
+
+// End Sy's Edits
 
 
 function carbon_recycle(){
