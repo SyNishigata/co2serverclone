@@ -65,11 +65,11 @@ get_header(); ?>
         		<div class="small-12 medium-6 large-6 columns">
         			<div class="section group">
 					
-							<!-- Begin Sy's Edits: Added link to expanded graph -->
-							<a class="expandedgraph" style="color: #0000EE; margin:0 0 20px; font-size:12px;">
-								<center>Click here for a breakdown of your emissions and tips to reduce them</center>
-							</a> 
-							<!-- End Sy's Edits -->
+						<!-- Begin Sy's Edits: Added link to expanded graph -->
+						<a class="expandedgraph" style="color: #0000EE; margin:0 0 20px; font-size:12px;">
+							<center>Click here for a breakdown of your emissions and tips to reduce them</center>
+						</a> 
+						<!-- End Sy's Edits -->
 							
 						<div class="section-title">
 							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
