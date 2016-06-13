@@ -51,5 +51,9 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\fo
 - line 9
 - line 23
 
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-ranking-template.php
+- line 58
+- line 110
+- line 130
 
 

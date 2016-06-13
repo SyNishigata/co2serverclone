@@ -54,7 +54,26 @@
 						<div class="rank-badge" style="background-image:url('<?php echo INCLUDES_URL.'/img/badge-blue.png';?>')">
 							<span><?php _e($myrank); ?></span>
 						</div>
-						<p><center><strong>You are the top <?php echo $ordinal_rank; ?> most carbon neutral person among all users.</strong></center></p>
+						
+						<!-- Begin Sy's Edits: Added count of people between 'all' and 'users' && Added dropdown menu for competitions -->
+						<p><center><strong>You are the top <?php echo $ordinal_rank; ?> most carbon neutral person among all <?php echo $last; ?> users.</strong></center></p>
+						
+						<div class="competition-select" align="center" style="padding-left: 130px">
+							Select a Competition: 
+							<select id="comp-select" name="competitions">                      
+								<option value="0">Overall Ranking</option>
+								<option value="1">Competition 1</option>
+								<option value="2">Competition 2</option>
+								<option value="3">Competition 3</option>
+							</select>
+						</div>
+						
+						<?php
+							$selectOption = $_POST['competitions']; // place this value (from the drop down menu) in the php header
+						?>
+						
+						<!-- End Sy's Edits -->
+						
 						<div class="avatars">
 							<div class="row">
 								<div class="small-1 columns nav" id="prev" data-prev="<?php echo $prev; ?>"><img src="<?php echo INCLUDES_URL.'/img/prev.png';?>" style="margin:100% auto"></div>
@@ -87,6 +106,17 @@
 							</div>
 						</div>
 						<?php endif; ?>
+						
+						<!-- Begin Sy's Edits: Added button to return back to Pathways page -->
+						<div class="buttons">
+							<div class="row">
+								<div id="wrapper" style="text-align: center; padding-left: 35px">    
+									<div class="button rankingsreturn" style="display:inline-block"><strong>Back</strong></div>
+								</div>
+							</div>
+						</div>
+						<!-- End Sy's Edits -->
+							
 					</div>
 					
 				</div><!-- .Ranking -->
@@ -96,6 +126,15 @@
 <script>
 jQuery(function ($) {
     $('#mk-page-introduce').hide();
+	
+	// Begin Sy's Edits
+	
+	/* Sy's Edits: Added function for new "Back" button */
+	$(".rankingsreturn").on("click", function(){
+     	window.location = "<?php echo get_home_url().'/my-carbon/'?>";
+    });
+	
+	// End Sy's Edits
 
     $(".mycarbon").on("click", function(){
      	window.location = "<?php echo get_home_url().'/my-carbon/'.$current_user->user_login.'/'.date('Y')?>";

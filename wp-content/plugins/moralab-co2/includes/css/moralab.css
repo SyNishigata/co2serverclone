@@ -8,9 +8,25 @@ a.button:hover, a.accordion-title:hover {text-decoration: none;}
 
 
 /* Begin Sy's Edits */
+
+/* CSS for expanded graph link on pathways page */
 .expandedgraph:hover {
 	text-decoration: underline;
 }
+
+/* CSS for select box on the rankings page */
+.competition-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
+
 /* End Sy's Edits */
 
 
