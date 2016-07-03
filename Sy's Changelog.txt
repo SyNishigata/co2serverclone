@@ -50,6 +50,7 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\carbon
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\food-form.php
 - line 9
 - line 23
+- line 63
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-ranking-template.php
 - line 58

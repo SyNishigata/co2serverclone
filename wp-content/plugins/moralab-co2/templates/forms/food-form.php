@@ -1,6 +1,7 @@
 <?php global $carbon_data; 
 
 $food = get_post_meta($carbon_data['ID'], 'food_data', true);
+
 ?>
 
 
@@ -20,7 +21,7 @@ $food = get_post_meta($carbon_data['ID'], 'food_data', true);
 	</div>
 	<!-- End Sy's Edits -->
 	
-	<!-- Sy's Edits:  Added an outer div, so food input is hidden by default -->
+	<!-- Sy's Edits:  Added an outer div (id=hiddenfoodinput), so food input is hidden by default -->
 	<div hidden id="hiddenfoodinput">
 	
 		<div><p>How many servings do you eat?</p></div>
@@ -58,3 +59,18 @@ $food = get_post_meta($carbon_data['ID'], 'food_data', true);
 	<!-- End Sy's Edits -->
 
 </div>
+
+<!-- Sy's Edits:  Added a function that makes sure the food sections are not hidden when a user returns to edit their emissions -->
+<script>
+jQuery(function ($) {
+	
+	// If the 'veggiesno' is checked, then show the food sections.  Otherwise would be hidden when a user returns.
+	$(document).ready(function() {
+		if(jQuery('#veggiesno').is(':checked')) {
+			jQuery('#hiddenfoodinput').show();
+		}
+	});
+	
+});
+</script>
+<!-- End Sy's Edits -->

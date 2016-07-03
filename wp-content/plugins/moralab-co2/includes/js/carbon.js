@@ -467,7 +467,7 @@ function carbon_food(){
     var pork = isNaN(parseFloat(document.getElementById('pork').value)) ? 0.0:parseFloat(document.getElementById('pork').value)*0.11*52;
     var fish = isNaN(parseFloat(document.getElementById('fish').value)) ? 0.0:parseFloat(document.getElementById('fish').value)*0.11*52;
     var poultry = isNaN(parseFloat(document.getElementById('poultry').value)) ? 0.0:parseFloat(document.getElementById('poultry').value)*0.11*52;
-	// Begin Sy's Edits: Commented out this variable
+	// Begin Sy's Edits: Commented out this variable because I changed 'veggies' to 'veggiesyes' and 'veggiesno'
 	// var veggies = (document.getElementById('veggies').value);
 	// End Sy's Edits
 	
