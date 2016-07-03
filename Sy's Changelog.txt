@@ -24,6 +24,8 @@ Added files:
 
 - C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-expanded-graph.php
 
+- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-pathways.php
+
 
 
 
