@@ -1,6 +1,12 @@
 co2serverclone:
 
 
+Changes to Wordpress via Dashboard:
+
+- Went into Jupiter theme and disabled header on main page and footer on all pages
+
+
+
 Added pages: 
 
 - pathways (based on /my-carbon)
@@ -48,6 +54,11 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-s
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\carbon.js
 - line 470
 - line 481
+
+C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\travel-form.php
+- line 94 
+- line 111
+- line 241
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\food-form.php
 - line 9
