@@ -25,8 +25,7 @@ endif;
         <li class="tabs-title is-active"><a href="#carpanel" aria-selected="true">Car</a></li>
         <li class="tabs-title"><a href="#bikepanel">Motorcyle</a></li>
         <li class="tabs-title"><a href="#buspanel" onblur="mapInit('busmap', 'bfrom', 'bto', 'bdist')">Bus</a></li>
-        <li class="tabs-title"><a href="#trainpanel" onblur="mapInit('trainmap', 'rfrom', 'rto', 'rdist')">Train</a>
-        </li>
+        <li class="tabs-title"><a href="#trainpanel" onblur="mapInit('trainmap', 'rfrom', 'rto', 'rdist')">Train</a></li>
         <li class="tabs-title"><a href="#planepanel" onblur="mapInit('planemap', 'pfrom', 'pto' , 'pdist')">Plane</a>
         </li>
     </ul>

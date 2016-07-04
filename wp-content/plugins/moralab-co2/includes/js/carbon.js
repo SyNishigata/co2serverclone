@@ -616,17 +616,61 @@ jQuery("#show_water_help").on("click", function(){
     
 });
 
+
+// Begin Sy's Edits
+
+/* Sy's Edits: Edited this function */
 jQuery("div.donext").on("click", function(){
+	/* Sy's Edits: If the next button is clicked when on Travel Form, then it will switch between 
+	 *             the travel tabs instead of going straight to the Home Form. 
+	 */
     if (jQuery(this).hasClass("fromtravel")) {
-        jQuery('#example-tabs div a')[1].click();
+        //jQuery('#example-tabs div a')[1].click();    //old interaction
+		
+		var activeTravelTab = jQuery('#travel-tabs .is-active').text();
+		switch(activeTravelTab){
+			case "Car": 		jQuery('#travel-tabs li')[1].click();
+								break;
+								
+			case "Motorcyle": 	jQuery('#travel-tabs li')[2].click();
+								break;
+								
+			case "Bus": 		jQuery('#travel-tabs li')[3].click();
+								break;
+								
+			case "Train": 		jQuery('#travel-tabs li')[4].click();
+								break;
+								
+			default: 			jQuery('#example-tabs div a')[1].click();
+								break;
+		}
     }
+	/* Sy's Edits: If the next button is clicked when on Home Form, then it will switch between 
+	 *             the home tabs instead of going straight to the Food Form. 
+	 */
     else if (jQuery(this).hasClass("fromhome")) {
-        jQuery('#example-tabs div a')[2].click();
+        //jQuery('#example-tabs div a')[2].click();     //old interaction
+		
+		var activeHomeTab = jQuery('#home-tabs .is-active').text();
+		switch(activeHomeTab){
+			case "Electric": 	jQuery('#home-tabs li')[1].click();
+								break;
+								
+			case "Gas": 		jQuery('#home-tabs li')[2].click();
+								break;
+								
+			case "Fuel": 		jQuery('#home-tabs li')[3].click();
+								break;
+								
+			default: 			jQuery('#example-tabs div a')[2].click();
+								break;
+		}
     }
     else {
         jQuery('#example-tabs div a')[3].click();
     }
-
 });
+
+// End Sy's Edits
 
 jQuery( ".datepick" ).datepicker();

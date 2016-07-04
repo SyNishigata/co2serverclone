@@ -54,6 +54,7 @@ C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-s
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\carbon.js
 - line 470
 - line 481
+- line 620
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\forms\travel-form.php
 - line 94 
