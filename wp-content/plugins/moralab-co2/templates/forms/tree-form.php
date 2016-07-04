@@ -7,8 +7,9 @@ $new = ((get_query_var('mlpage') == 'plant-a-tree')? true:false);
 $trees = get_tree_species();
 ?>
 
+<!-- Begin Sy's Edits: Added a link to the Material Icons by Google -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<!-- End Sy's Edits -->
 
 <div class="content"><div class="container" style="margin-bottom:20px;">
     <div class="panel-heading"><center><h2 style="margin0px"><?php echo (!empty($post) && !($new))? '':'Record your planted tree';?></h2></center></div>
@@ -142,14 +143,16 @@ $trees = get_tree_species();
                             endif; ?>
                     </div>
 
-                    <div class="row in-line">
-                        <div><a class="button post_submit" style="border-radius: 2px;">Save Tree</a></div>
-                        <?php if (!$new){ ?>
-                        <div><a class="button post_delete" style="border-radius: 2px;">Delete Tree</a></div>
-                        <?php } else { ?>
-                        <div><a class="button cancel" style="border-radius: 2px;">Cancel</a></div>
-                        <?php } ?>
-                    </div>
+					<div style="text-align:right">
+						<div class="row in-line">
+							<div><a class="button post_submit" style="border-radius: 2px;">Save Tree</a></div>
+							<?php if (!$new){ ?>
+							<div><a class="button post_delete" style="border-radius: 2px;">Delete Tree</a></div>
+							<?php } else { ?>
+							<div><a class="button cancel" style="border-radius: 2px;">Cancel</a></div>
+							<?php } ?>
+						</div>
+					</div>
                 </div>
             </div>
         </form>
