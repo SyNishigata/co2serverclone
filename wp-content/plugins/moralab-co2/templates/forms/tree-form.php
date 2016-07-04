@@ -50,7 +50,7 @@ $trees = get_tree_species();
                     <div class="row">
                         <div class="small-5 columns">
                             <label for="treeName" class="text-right middle">
-								<i class="material-icons prefix">local_florist</i>
+								<i class="material-icons md-18" style="color:green">local_florist</i>
 								Tree Species
 							</label>
                         </div>
@@ -70,7 +70,7 @@ $trees = get_tree_species();
                     <div class="row">
                         <div class="small-5 columns">
                             <label for="treeDate" class="text-right middle">
-							<i class="material-icons md-18">date_range</i>
+							<i class="material-icons md-18" style="color:green">date_range</i>
 							Date Planted
 							</label>
                         </div>
@@ -97,7 +97,7 @@ $trees = get_tree_species();
                     <div class="row">
                         <div class="small-5 columns">
                             <label for="location" class="text-right middle">
-							<i class="material-icons md-18">map</i>
+							<i class="material-icons md-18" style="color:green">map</i>
 							Location
 							</label>
                         </div>
@@ -109,7 +109,7 @@ $trees = get_tree_species();
                     <div class="row">
                         <div class="small-5 columns">
                             <label for="latitude" class="text-right middle">
-							<i class="material-icons md-18">place</i>
+							<i class="material-icons md-18" style="color:green">place</i>
 							Latitude
 							</label>
                         </div>
@@ -121,7 +121,7 @@ $trees = get_tree_species();
                     <div class="row">
                         <div class="small-5 columns" style="float:left;">
                             <label for="longitude" class="text-right middle">
-							<i class="material-icons md-18">place</i>
+							<i class="material-icons md-18" style="color:green">place</i>
 							Longitude
 							</label>
                         </div>
@@ -143,6 +143,7 @@ $trees = get_tree_species();
                             endif; ?>
                     </div>
 
+					<!-- Begin Sy's Edits: Added an extra outer div that moved the buttons to the right -->
 					<div style="text-align:right">
 						<div class="row in-line">
 							<div><a class="button post_submit" style="border-radius: 2px;">Save Tree</a></div>
