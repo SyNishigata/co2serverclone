@@ -7,6 +7,9 @@ $new = ((get_query_var('mlpage') == 'plant-a-tree')? true:false);
 $trees = get_tree_species();
 ?>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 <div class="content"><div class="container" style="margin-bottom:20px;">
     <div class="panel-heading"><center><h2 style="margin0px"><?php echo (!empty($post) && !($new))? '':'Record your planted tree';?></h2></center></div>
         <!-- Carbon Form -->
@@ -36,15 +39,23 @@ $trees = get_tree_species();
                 </div>
             </div> -->
 
+			
             <div class="medium-12 large-5 columns">
                 <div class="form-group">
+				
+					<!-- Begin Sy's Edits: -Changed columns (for the form) from 3-9 for each input to 5-7.
+										   -Added icons to the labels.
+										   -Added better placeholders in the form inputs. -->
                     <div class="row">
-                        <div class="small-3 columns">
-                            <label for="treeName" class="text-right middle">Tree Species</label>
+                        <div class="small-5 columns">
+                            <label for="treeName" class="text-right middle">
+								<i class="material-icons prefix">local_florist</i>
+								Tree Species
+							</label>
                         </div>
-                        <div class="small-9 columns">
+                        <div class="small-7 columns">
                             <select class="form-control required" name="treeName" id="treeName" onblur="tree_details()" onchange="get_tree_info()" value="<?php echo !empty($post)? $post->post_title:'';?>" placeholder="Enter a name for this tree">
-                                <option>Select a species</option>
+								<option>Select a species</option>
                                 <?php foreach ($trees as $tree) {
                                     $selected = '';
                                     if (!empty($post) && $post->post_title == $tree->ID){
@@ -56,10 +67,13 @@ $trees = get_tree_species();
                         </div>
                     </div>
                     <div class="row">
-                        <div class="small-3 columns">
-                            <label for="treeDate" class="text-right middle">Date Planted</label>
+                        <div class="small-5 columns">
+                            <label for="treeDate" class="text-right middle">
+							<i class="material-icons md-18">date_range</i>
+							Date Planted
+							</label>
                         </div>
-                        <div class="small-9 columns">  
+                        <div class="small-7 columns">  
                             <input type="text" class="form-control" name="treeBirth" id="treeDate" onblur="tree_project()" value="<?php echo !empty($post)? get_post_meta($post->ID, 'treeBirth', true):'';?>" placeholder="MM/DD/YYY">
                         </div>
                     </div>
@@ -80,30 +94,43 @@ $trees = get_tree_species();
                     </div>
 
                     <div class="row">
-                        <div class="small-3 columns">
-                            <label for="location" class="text-right middle">Location</label>
+                        <div class="small-5 columns">
+                            <label for="location" class="text-right middle">
+							<i class="material-icons md-18">map</i>
+							Location
+							</label>
                         </div>
-                        <div class="small-9 columns">
-                            <input type="text" class="form-control required" name="location" id="location" value="<?php echo !empty($post)? get_post_meta($post->ID, 'location', true):'';?>" placeholder="Type location name" />
+                        <div class="small-7 columns">
+                            <input type="text" class="form-control required" name="location" id="location" value="<?php echo !empty($post)? get_post_meta($post->ID, 'location', true):'';?>" placeholder="City, State" />
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="small-3 columns">
-                            <label for="latitude" class="text-right middle">Latitude</label>
+                        <div class="small-5 columns">
+                            <label for="latitude" class="text-right middle">
+							<i class="material-icons md-18">place</i>
+							Latitude
+							</label>
                         </div>
-                        <div class="small-9 columns">
-                            <input type="text" class="form-control" name="latitude" id="latitude" onblur="tree_locate()" value="<?php echo !empty($post)? get_post_meta($post->ID, 'latitude', true):'';?>" placeholder="Type latitude" >
+                        <div class="small-7 columns">
+                            <input type="text" class="form-control" name="latitude" id="latitude" onblur="tree_locate()" value="<?php echo !empty($post)? get_post_meta($post->ID, 'latitude', true):'';?>" placeholder="See 'Location' tab on right" >
                         </div>
                     </div>
+					
                     <div class="row">
-                        <div class="small-3 columns" style="float:left;">
-                            <label for="longitude" class="text-right middle">Longitude</label>
+                        <div class="small-5 columns" style="float:left;">
+                            <label for="longitude" class="text-right middle">
+							<i class="material-icons md-18">place</i>
+							Longitude
+							</label>
                         </div>
-                        <div class="small-9 columns">
-                            <input type="text" class="form-control " name="longitude" id="longitude" onblur="tree_locate()" value="<?php echo !empty($post)? get_post_meta($post->ID, 'longitude', true):'';?>" placeholder="Type longitude" >
+                        <div class="small-7 columns">
+                            <input type="text" class="form-control " name="longitude" id="longitude" onblur="tree_locate()" value="<?php echo !empty($post)? get_post_meta($post->ID, 'longitude', true):'';?>" placeholder="See 'Location' tab on right" >
                         </div>  
                     </div>
+					
+					<!-- End Sy's Edits -->
+					
                     <div class="photos" id="input_photos">
                         <?php if (!empty($post)):
                                 $photos = get_post_meta($post->ID, 'tree_photos', true);
