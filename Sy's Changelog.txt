@@ -49,7 +49,7 @@ Added files:
 
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-food-tips.php
 
-	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-recycling-tips.php
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-waste-tips.php
 
 
 

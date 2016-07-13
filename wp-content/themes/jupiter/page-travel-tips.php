@@ -102,6 +102,22 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+			
+			<!-- Fourth Row -->
+			<div class="row" style="padding-top:15px">
+				<div id="wrapper" style="text-align: center; padding-top: 15px">
+					<div class="button tipsreturn" style="display:inline-block; text-align:center"><strong>Return to Graph</strong></div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+jQuery(function ($) {
+	
+    $(".tipsreturn").on("click", function(){
+     	window.location = "<?php echo get_home_url().'/expanded-graph'?>";
+    });
+});
+</script>

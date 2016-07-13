@@ -67,12 +67,28 @@ get_header(); ?>
 				<div class="small-12 medium-7 large-7 columns">
 					<img src="<?php echo INCLUDES_URL.'/img/tips-general2.png';?>">   
 					<div style="text-align:right">
-							<a href="http://www.shrinkthatfootprint.com" class="tipslink" style="color:#0000EE">
-								shrinkthatfootprint.com
-							</a> 
-						</div>
+						<a href="http://www.shrinkthatfootprint.com" class="tipslink" style="color:#0000EE">
+							shrinkthatfootprint.com
+						</a> 
+					</div>
+				</div>
+			</div>
+			
+			<!-- Third Row -->
+			<div class="row" style="padding-top:15px">
+				<div id="wrapper" style="text-align: center; padding-top: 15px">
+					<div class="button tipsreturn" style="display:inline-block; text-align:center"><strong>Return to Graph</strong></div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+jQuery(function ($) {
+	
+    $(".tipsreturn").on("click", function(){
+     	window.location = "<?php echo get_home_url().'/expanded-graph'?>";
+    });
+});
+</script>
