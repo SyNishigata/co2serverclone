@@ -41,7 +41,15 @@ Added files:
 
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-pathways.php
 
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-tips.php
+
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-travel-tips.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-home-tips.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-food-tips.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-recycling-tips.php
 
 
 
