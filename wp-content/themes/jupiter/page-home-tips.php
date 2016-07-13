@@ -8,7 +8,7 @@ get_header(); ?>
 	<div class="tips-container" style="margin-bottom:20px;">
 		<!-- Header --> 
 		<div class="panel-heading" style="padding-top:15px">
-			<center><h1 style="margin0px"><b>Tips For Reducing Your Carbon Emissions</b></h1></center>
+			<center><h1 style="margin0px"><b>Tips For Reducing Your Home Carbon Emissions</b></h1></center>
 		</div>
     	<div class="tips-panel-body">
         	<!-- First Row -->
