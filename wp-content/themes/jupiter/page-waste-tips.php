@@ -11,65 +11,57 @@ get_header(); ?>
 			<center><h1 style="margin0px"><b>Tips For Reducing Your Waste Carbon Emissions</b></h1></center>
 		</div>
     	<div class="tips-panel-body">
-        	<!-- First Row -->
-        	<div class="row" style="padding-top:10px">   
-        		<div class="small-12 medium-5 large-5 columns">
+			<!-- First Row -->
+			<div class="row" style="padding-top:15px">   
+        		<div class="small-12 medium-7 large-7 columns">
         			<div class="section group" style="color:black">
-						<img src="<?php echo INCLUDES_URL.'/img/tips-general1.png';?>">   
+						<b>Globally, one fourth of all green house gas emissions are associated with making 
+						stuff.</b>  10% is for construction and 15% is for physical products.  Many of these 
+						products end up in a landfill when they could have been reused or recycled.  When you 
+						avoid buying a new product, you save on emissions from sourcing virgin materials, from 
+						manufacturing and from distribution.  
+						<br><br>
+						
+						<b>Buy quality, not quantity.</b>  Say "no" to junk, even if it is a deal.  Buy 
+						something that will last and that can be repaired.  Enjoy less clutter and spend 
+						less time cleaning.  
+						<br><br>
+						
+						<b>Choose low carbon designs.</b>  If a product uses energy, look for efficiency.  
+						For example, a laptop or tablet computer uses less energy than a desktop.  Choose 
+						sleek designs that make spare use of materials.  Support designs that incorporate 
+						reclaimed materials or recycled content.  Pick products made out of materials that 
+						don't require high carbon processing like clay and wood over carbon intensive 
+						materials like metal, glass and stone.
 					</div>
 				</div>
-				<div class="small-12 medium-7 large-7 columns">
-        			<div class="section group" style="color:black">
-						<b>You can have a high quality of life with low carbon emissions. </b>
-						The size the average carbon footprint in wealthy countries varies dramatically
-						with the source of energy used for electricity and the quality of public 
-						transportation infrastructure.  The blur bars in chart to the left show 
-						the range among the 20 nations with the highest total emissions.  You can 
-						lobby your government and vote to change these factors.  Individual footprints a
-						lso depend on personal habits that you can start to change right now.  
-						<br><br>
-						
-						<b>The people responsible for Climate Change are the ones with the power to solve it. </b>
-						China and the USA, along with a few other countries dominate global CO2 emissions due to 
-						their large populations, their high rates of per capita emissions, or both.  The chart 
-						on the left shows each countries' share of global carbon emissions next to their 
-						names.  The poorest countries will suffer the most from Climate Change, but their 
-						emissions do not play a significant role.  It is those with high emissions that have
-						the leverage to reverse Climate Change.  
-						<br><br>
-						
-						<b>Be part of a new model for development. </b> Most of the world's poor countries have very 
-						low average carbon footprints because of their low standard of living.  Wealthy people 
-						in these countries have high personal carbon emissions.  We need to create an alternative,
-						low carbon path for them to follow as they develop and their quality of life improves.          
-					</div>
+				<div class="small-12 medium-5 large-5 columns">
+					<img src="<?php echo INCLUDES_URL.'/img/tips-waste1.png';?>">   
 				</div>
 			</div>
 			
 			<!-- Second Row -->
 			<div class="row" style="padding-top:15px">   
-        		<div class="small-12 medium-5 large-5 columns">
-        			<div class="section group" style="color:black">
-						<b>A few areas dominate personal emissions.  </b>
-						The chart shows how over half of the 19 tons 
-						of CO2 equivalent emissions per person in the 
-						USA is from driving, electricity, natural gas 
-						(for heating), and food from cows.  Calculate 
-						your carbon and choose your target areas.  
-						<br><br>
-					
-						<b>Some changes are easy and come with extra benefits. </b> 
-						Look through the strategies and start with the easiest 
-						for you.  Reduce your carbon footprint while at the same 
-						time you save money, save time and improve your health. 
-					</div>
-				</div>
 				<div class="small-12 medium-7 large-7 columns">
-					<img src="<?php echo INCLUDES_URL.'/img/tips-general2.png';?>">   
-					<div style="text-align:right">
-						<a href="http://www.shrinkthatfootprint.com" class="tipslink" style="color:#0000EE">
-							shrinkthatfootprint.com
-						</a> 
+					<img src="<?php echo INCLUDES_URL.'/img/tips-waste2.png';?>">   
+				</div>
+        		<div class="small-12 medium-5 large-5 columns">
+        			<div class="section group" style="color:black">				
+						<b>Buy used goods.</b>  You can look online to find exactly what you want.  You 
+						will get better stuff for the same budget, and produce less carbon.  The next time 
+						you need furniture, sports equipment, or a costume, give it a try.  
+						<br><br>		
+						
+						<b>Recycle.</b>  When a product is made of recycled paper, aluminum, plastic or 
+						glass, carbon emissions are much lower than if it is made of virgin materials.  
+						Landfill emissions are also avoided. 
+						<br><br>
+						
+						<b>Share or rent products you don't need all the time. </b>
+						<br><br>
+
+						<b>Upcycle.</b>  Use old materials to make new things.  An old quilt can become a 
+						shopping bag; a wooden palette can become a bookcase.  Let your creativity flow. 
 					</div>
 				</div>
 			</div>
