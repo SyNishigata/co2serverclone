@@ -22,15 +22,26 @@ Added pages:
 
 Added files:
 
-- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
+	PICS:  C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\img
+	tips-general1.PNG
+	tips-general2.PNG
+	tips-travel1.PNG
+	tips-travel2.PNG
 
-- C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
 
-- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-competitions.php
+	CODE:
 
-- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-expanded-graph.php
+	- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
 
-- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-pathways.php
+	- C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\carbon-competitions-template.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-competitions.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-expanded-graph.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-pathways.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-travel-tips.php
 
 
 
