@@ -176,7 +176,7 @@ function get_expanded_bar_graph(id, data) {
 			backgroundColor: "rgba(255,255,255,1)",
 			formatter: 
 				function () {
-					var firstLine = "Your " + "<b>" + this.series.name + "</b>" + " Emissions:" + "<br>";
+					var firstLine = "Your " + this.series.name + " Emissions:" + "<br>";
 					var secondLine = this.y + " tons of CO2 emitted" + "<br>";
 					var tips = "";
 					var learnMore = '<span style="color:blue">Click this column to learn more!</span>';
