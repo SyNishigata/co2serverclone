@@ -9,6 +9,11 @@ a.button:hover, a.accordion-title:hover {text-decoration: none;}
 
 /* Begin Sy's Edits */
 
+/* CSS for links on tips pages */
+.tipslink:hover {
+	text-decoration: underline;
+}
+
 /* CSS for expanded graph link on pathways page */
 .expandedgraph:hover {
 	text-decoration: underline;

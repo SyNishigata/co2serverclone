@@ -414,7 +414,6 @@ function get_expanded_chart_data(){
 			, "data" => [0, 0, 0, floatval($recycle['co2_recycle'])]
 		));
 	}
-	
 	return $data;
 }
 
