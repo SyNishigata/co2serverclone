@@ -13,68 +13,99 @@ get_header(); ?>
     	<div class="tips-panel-body">
         	<!-- First Row -->
         	<div class="row" style="padding-top:10px">   
-        		<div class="small-12 medium-5 large-5 columns">
-        			<div class="section group" style="color:black">
-						<img src="<?php echo INCLUDES_URL.'/img/tips-general1.png';?>">   
-					</div>
-				</div>
 				<div class="small-12 medium-7 large-7 columns">
         			<div class="section group" style="color:black">
-						<b>You can have a high quality of life with low carbon emissions. </b>
-						The size the average carbon footprint in wealthy countries varies dramatically
-						with the source of energy used for electricity and the quality of public 
-						transportation infrastructure.  The blur bars in chart to the left show 
-						the range among the 20 nations with the highest total emissions.  You can 
-						lobby your government and vote to change these factors.  Individual footprints a
-						lso depend on personal habits that you can start to change right now.  
+						<b>Electricity use dominates the home carbon footprint, but it can be reduced 
+						dramatically by using a clean power source.</b>  The chart shows how the same 10,000 
+						kilowatts of electricity results in very different carbon emissions, depending on 
+						the source of the power (red bars).  You can also see how countries (blue bars) 
+						using coal, like India and Australia, have high carbon emissions, while countries 
+						using renewable energy, like Iceland and Sweden, have low emissions for the same 
+						amount of power.  
 						<br><br>
 						
-						<b>The people responsible for Climate Change are the ones with the power to solve it. </b>
-						China and the USA, along with a few other countries dominate global CO2 emissions due to 
-						their large populations, their high rates of per capita emissions, or both.  The chart 
-						on the left shows each countries' share of global carbon emissions next to their 
-						names.  The poorest countries will suffer the most from Climate Change, but their 
-						emissions do not play a significant role.  It is those with high emissions that have
-						the leverage to reverse Climate Change.  
+						Find out what mix your electricity is made from.  If it is not renewable, lobby 
+						and vote for legislation to mandate that the utility switch to clean energy.  If 
+						there is an option to pay for a "green rate" within your utility, make sure it goes 
+						towards expansion of renewable energy.  
 						<br><br>
 						
-						<b>Be part of a new model for development. </b> Most of the world's poor countries have very 
-						low average carbon footprints because of their low standard of living.  Wealthy people 
-						in these countries have high personal carbon emissions.  We need to create an alternative,
-						low carbon path for them to follow as they develop and their quality of life improves.          
+						You can also invest in producing your own renewable energy.  This will most likely 
+						be solar, perhaps complemented by batteries.  It is not all or nothing -- you can 
+						start with a solar hot water heater, a solar or ground source heat pump, or a 
+						solar-powered air conditioner.			
 					</div>
+				</div>
+				<div class="small-12 medium-5 large-5 columns">
+					<img src="<?php echo INCLUDES_URL.'/img/tips-home1.png';?>">  
 				</div>
 			</div>
 			
 			<!-- Second Row -->
-			<div class="row" style="padding-top:15px">   
-        		<div class="small-12 medium-5 large-5 columns">
+			<div class="row" style="padding-top:20px">   
+        		<div class="small-12 medium-7 large-7 columns">
         			<div class="section group" style="color:black">
-						<b>A few areas dominate personal emissions.  </b>
-						The chart shows how over half of the 19 tons 
-						of CO2 equivalent emissions per person in the 
-						USA is from driving, electricity, natural gas 
-						(for heating), and food from cows.  Calculate 
-						your carbon and choose your target areas.  
+						<b><u>How to increase efficiency with the power source you have.  </u></b>
 						<br><br>
-					
-						<b>Some changes are easy and come with extra benefits. </b> 
-						Look through the strategies and start with the easiest 
-						for you.  Reduce your carbon footprint while at the same 
-						time you save money, save time and improve your health. 
+						
+						<b>Heating and Cooling:</b>  Temperature control is by far the biggest use.  
+						Program your thermostat to turn off when you are not home, when you are asleep,
+						or not using part of the house.  Try adjusting the setting one degree at a time.  
+						Can you still be comfortable?  A sweater (for heating) or  fans to move the air 
+						(for cooling) may be all you need.  Fans don't use much electricity.  A one degree 
+						change can cut electricity use by 10%.  
 					</div>
 				</div>
-				<div class="small-12 medium-7 large-7 columns">
-					<img src="<?php echo INCLUDES_URL.'/img/tips-general2.png';?>">   
-					<div style="text-align:right">
-						<a href="http://www.shrinkthatfootprint.com" class="tipslink" style="color:#0000EE">
-							shrinkthatfootprint.com
-						</a> 
+				<div class="small-12 medium-5 large-5 columns">
+					<div class="section group" style="color:black">
+						<b>Insulate your roof and walls and seal leaks:</b>  You can do some yourself: 
+						caulk gaps, plug holes with expanding foam, add foam strips to external doorways, 
+						or block unused chimneys.  Clean your AC filters.  Plant trees for shade. 
+						<br><br>
+						
+						<b>Water Heating:</b>  Turn down your thermostat to 125 F.  Do laundry in cold water. 
+						Buy a solar water heater - they pay for themselves.
+						<br><br>
 					</div>
 				</div>
 			</div>
 			
 			<!-- Third Row -->
+        	<div class="row" style="padding-top:10px">   
+				<div class="small-12 medium-7 large-7 columns">
+					<img src="<?php echo INCLUDES_URL.'/img/tips-home2.png';?>">  
+				</div>
+				<div class="small-12 medium-5 large-5 columns">
+        			<div class="section group" style="color:black">
+						<b>Lighting:</b>  Switching to CFLs or LEDs cuts electricity used by lights by 80%.  
+						Change frequently used lights first.  Mak sure you buy the right fit, shape (to shine 
+						where you want), brightness (see a watts-lumens conversion table), warmth (usually 
+						2,700 - 3,000 kelvins for home use).   LEDs are dimmable and quick to warm up, but cost 
+						more than CFLs. 
+						<br><br>
+						
+						<b>Refrigerator and Freezer:</b>  They are on all the time, make sure they are energy 
+						efficient models and not set too cold. 
+						<br><br>
+						
+						<b>Laundry and Dishwashing:</b>  Do full loads on the coldest setting.  Use a 
+						clothesline.
+						<br><br>
+						
+						<b>Electronics and Computers:</b>  5%-10% of household power is used by equipment 
+						in "stand by" mode.  Turn everything off before you go to bed.  Power strips make 
+						it easy to turn several things off at once.  When replacing electronics, consider 
+						the wattage.
+						<br><br>
+						
+						<b>Water:</b>  It takes energy to pump and treat water.  Use low flow toilets 
+						(or a brick in the tank).  Don't water your plants when it is hot (50% evaporates), 
+						or when the weather is wet.			
+					</div>
+				</div>
+			</div>
+			
+			<!-- Fourth Row -->
 			<div class="row" style="padding-top:15px">
 				<div id="wrapper" style="text-align: center; padding-top: 15px">
 					<div class="button tipsreturn" style="display:inline-block; text-align:center"><strong>Return to Graph</strong></div>

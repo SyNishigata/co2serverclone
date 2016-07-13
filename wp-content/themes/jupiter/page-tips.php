@@ -14,9 +14,7 @@ get_header(); ?>
         	<!-- First Row -->
         	<div class="row" style="padding-top:10px">   
         		<div class="small-12 medium-5 large-5 columns">
-        			<div class="section group" style="color:black">
-						<img src="<?php echo INCLUDES_URL.'/img/tips-general1.png';?>">   
-					</div>
+					<img src="<?php echo INCLUDES_URL.'/img/tips-general1.png';?>">   
 				</div>
 				<div class="small-12 medium-7 large-7 columns">
         			<div class="section group" style="color:black">
