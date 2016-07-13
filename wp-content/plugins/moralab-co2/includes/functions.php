@@ -325,6 +325,111 @@ function get_chart_data(){
 
 // Begin Sy's Edits 
 	
+/* Sy's Edits: Added a new function to push travel data to data array. Used in get_expanded_chart_data */
+function push_travel_data($travel, $data){
+	array_push($data, array(
+		"name" => 'Car'
+		, "data" => [floatval($travel['car']), 0, 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Motorcycle'
+		, "data" => [floatval($travel['mcycl']), 0, 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Bus'
+		, "data" => [floatval($travel['bus']), 0, 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Train'
+		, "data" => [floatval($travel['train']), 0, 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Plane'
+		, "data" => [floatval($travel['plane']), 0, 0, 0]
+	));
+	return $data;
+}
+
+/* Sy's Edits: Added a new function to push home data to data array. Used in get_expanded_chart_data */
+function push_home_data($home, $data){
+	array_push($data, array(
+		"name" => 'Electric'
+		, "data" => [0, floatval($home['electric']) / floatval($home['household']), 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Natural Gas'
+		, "data" => [0, floatval($home['natural_gas']) / floatval($home['household']), 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Propane Fuel'
+		, "data" => [0, floatval($home['propane_fuel']) / floatval($home['household']), 0, 0]
+	));
+	array_push($data, array(
+		"name" => 'Water'
+		, "data" => [0, floatval($home['water']) / floatval($home['household']), 0, 0]
+	));
+	return $data;
+}
+
+/* Sy's Edits: Added a new function to push food data to data array. Used in get_expanded_chart_data */
+function push_food_data($food, $data){
+	//***************FIX THIS: WHAT IS 'GENERAL DIET' SUPPOSED TO BE CALLED? (THE 0.9 padding)*************
+	array_push($data, array(
+		"name" => 'Lamb'
+		, "data" => [0, 0, floatval($food['lamb'])*0.11*52*3.92*0.001, 0]
+	));
+	array_push($data, array(
+		"name" => 'Beef'
+		, "data" => [0, 0, floatval($food['beef'])*0.11*52*27*0.001, 0]
+	));
+	array_push($data, array(
+		"name" => 'Pork'
+		, "data" => [0, 0, floatval($food['pork'])*0.11*52*12.1*0.001, 0]
+	));
+	array_push($data, array(
+		"name" => 'Fish'
+		, "data" => [0, 0, floatval($food['fish'])*0.11*52*11.9*0.001, 0]
+	));
+	array_push($data, array(
+		"name" => 'Poultry'
+		, "data" => [0, 0, floatval($food['poultry'])*0.11*52*6.9*0.001, 0]
+	));
+	array_push($data, array(
+		"name" => 'General Diet'
+		, "data" => [0, 0, 0.9, 0]
+	));	
+	return $data;
+}
+
+/* Sy's Edits: Added a new function to push recycle data to data array. Used in get_expanded_chart_data */
+function push_recycle_data($recycle, $data){
+	array_push($data, array(
+		"name" => 'Waste'
+		, "data" => [0, 0, 0, floatval($recycle['co2_recycle'])]
+	));
+	return $data;
+}
+
+/* Sy's Edits: Added a function bubble_sort. Used in get_expanded_chart_data */
+function bubble_sort($arr) {
+    $size = count($arr);
+    for ($i=0; $i<$size; $i++) {
+        for ($j=0; $j<$size-1-$i; $j++) {
+            if ($arr[$j+1] < $arr[$j]) {
+                swap($arr, $j, $j+1);
+            }
+        }
+    }
+    return $arr;
+}
+
+/* Sy's Edits: Added a helper function. Used in bubble_sort */
+function swap(&$arr, $a, $b) {
+    $tmp = $arr[$a];
+    $arr[$a] = $arr[$b];
+    $arr[$b] = $tmp;
+}
+
 /* Sy's Edits: Added a new function to get the expanded chart data */
 function get_expanded_chart_data(){
 	global $current_user;
@@ -340,79 +445,35 @@ function get_expanded_chart_data(){
 		$home = get_post_meta( $emission->ID, 'home_data', true );
 		$food = get_post_meta( $emission->ID, 'food_data', true );
 		$recycle = get_post_meta( $emission->ID, 'recycle_data', true );
-
-		// Adding travel data to array
-		array_push($data, array(
-			"name" => 'Car'
-			, "data" => [floatval($travel['car']), 0, 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Motorcycle'
-			, "data" => [floatval($travel['mcycl']), 0, 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Bus'
-			, "data" => [floatval($travel['bus']), 0, 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Train'
-			, "data" => [floatval($travel['train']), 0, 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Plane'
-			, "data" => [floatval($travel['plane']), 0, 0, 0]
-		));
 		
-		// Adding home data to array
-		array_push($data, array(
-			"name" => 'Electric'
-			, "data" => [0, floatval($home['electric']) / floatval($home['household']), 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Natural Gas'
-			, "data" => [0, floatval($home['natural_gas']) / floatval($home['household']), 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Propane Fuel'
-			, "data" => [0, floatval($home['propane_fuel']) / floatval($home['household']), 0, 0]
-		));
-		array_push($data, array(
-			"name" => 'Water'
-			, "data" => [0, floatval($home['water']) / floatval($home['household']), 0, 0]
-		));
+		// Calculations of totals to be used for sorting
+		$travelTotal = floatval($travel['car']) + floatval($travel['mcycl']) + floatval($travel['bus'])
+			+ floatval($travel['train']) + floatval($travel['plane']);
+			
+		$homeTotal = (floatval($home['electric']) / floatval($home['household'])) 
+			+ (floatval($home['natural_gas']) / floatval($home['household']))
+			+ (floatval($home['propane_fuel']) / floatval($home['household']))
+			+ (floatval($home['water']) / floatval($home['household']));
+			
+		$foodTotal = (floatval($food['lamb'])*0.11*52*3.92*0.001) + (floatval($food['beef'])*0.11*52*27*0.001)
+			+ (floatval($food['pork'])*0.11*52*12.1*0.001) + (floatval($food['fish'])*0.11*52*11.9*0.001)
+			+ (floatval($food['poultry'])*0.11*52*6.9*0.001);
+			
+		$recycleTotal = floatval($recycle['co2_recycle']);
 		
-		// Adding food data to array
-		//***************FIX THIS: WHAT IS 'GENERAL DIET' SUPPOSED TO BE CALLED? (THE 0.9 padding)*************
-		array_push($data, array(
-			"name" => 'Lamb'
-			, "data" => [0, 0, floatval($food['lamb'])*0.11*52*3.92*0.001, 0]
-		));
-		array_push($data, array(
-			"name" => 'Beef'
-			, "data" => [0, 0, floatval($food['beef'])*0.11*52*27*0.001, 0]
-		));
-		array_push($data, array(
-			"name" => 'Pork'
-			, "data" => [0, 0, floatval($food['pork'])*0.11*52*12.1*0.001, 0]
-		));
-		array_push($data, array(
-			"name" => 'Fish'
-			, "data" => [0, 0, floatval($food['fish'])*0.11*52*11.9*0.001, 0]
-		));
-		array_push($data, array(
-			"name" => 'Poultry'
-			, "data" => [0, 0, floatval($food['poultry'])*0.11*52*6.9*0.001, 0]
-		));
-		array_push($data, array(
-			"name" => 'General Diet'
-			, "data" => [0, 0, 0.9, 0]
-		));
+		$totals = array($travelTotal, $homeTotal, $foodTotal, $recycleTotal);
 		
-		// Adding recycle data to array
-		array_push($data, array(
-			"name" => 'Waste'
-			, "data" => [0, 0, 0, floatval($recycle['co2_recycle'])]
-		));
+		// Adding travel data to data array
+		$data = push_travel_data($travel, $data);
+		
+		// Adding home data to data array
+		$data = push_home_data($home, $data);
+		
+		// Adding food data to data array
+		$data = push_food_data($food, $data);
+		
+		// Adding recycle data to data array
+		$data = push_recycle_data($recycle, $data);
 	}
 	
 	return $data;
