@@ -38,65 +38,86 @@ get_header(); ?>
 
 <div class="content">
 	<div class="container" style="margin-bottom:20px;">
+		<!-- Title Header -->
+    	<div class="panel-heading"><center><h1 style="margin0px">My Pathway to Carbon Neutrality</h1></center></div>
+
     	<div class="panel-body">
-		
-        	<!-- First Row -->
-        	<div class="row carbon-summary" style="padding-top:100px">   
-			
-				<!-- Ranking Column -->
-        		<div class="small-12 medium-3 large-3 columns" >
-        			<div class="section group" style="padding-right:35px">
+        	
+        	<div class="row carbon-summary">   
+
+        		<div class="small-12 medium-6 large-6 columns">
+        			<div class="section group">
+						<div class="section-title">
+							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
+						</div>
+						<!-- <div id="rank" style="width:125px; height:125px; background-color:gold; border-radius: 50%; margin: 0 auto; color:white; font-size:50px; font-weight:900;line-height:125px;text-align:center"> -->
+						<!-- <div class="rank-badge"><img src="<?php echo INCLUDES_URL.'/img/badge-blue.png';?>"> -->
 						<div class="rank-badge" style="background-image:url('<?php echo INCLUDES_URL.'/img/badge-blue.png';?>')">
 							<span><?php _e($myrank); ?></span>
 						</div>
-						<div id="wrapper" style="padding-top:15px; padding-left: 18px">
-		        			<div class="button myrank" style="display:inline-block; text-align:center; white-space:nowrap">
-								<strong>My Ranking</strong>
-							</div>
+						<div id="wrapper" style="text-align: center; padding-top: 15px">
+		        			<div class="button myrank" style="display:inline-block; text-align:center"><strong>My Ranking</strong></div>
 		        		</div>
 					</div>
         		</div>
 
-        		<!-- Title Column -->
-				<div class="small-12 medium-6 large-6 columns">
-        			<div class="section group" style="position:relative; right:25px">
-						<div class="panel-heading"><h2 style="padding-top:50px; white-space:nowrap">
-							My Pathway to Carbon Neutrality
-						</h2></div>
-					</div>
-				</div>
-				
-				<!-- Competition Column -->
-        		<div class="small-12 medium-3 large-3 columns">
-        			<div class="section group" style="padding-left:45px">
-						<div class="competitions-pic" style="padding-top:10px">
-							<img src="https://pixabay.com/static/uploads/photo/2015/11/24/22/16/podium-1060918_960_720.png" alt="ccpodium" style="width:450px;height:150px;">
+        		<!-- Summary -->
+        		<div class="small-12 medium-6 large-6 columns">
+        			<div class="section group">
+					
+							<!-- Begin Sy's Edits: Added link to expanded graph -->
+							<a class="expandedgraph" style="color: #0000EE; margin:0 0 20px; font-size:12px;">
+								<center>Click here for a breakdown of your emissions and tips to reduce them</center>
+							</a> 
+							<!-- End Sy's Edits -->
+							
+						<div class="section-title">
+							<h2><?php //_e('My Carbon Emission', 'moralabs-plugins');?></h2>
 						</div>
-						<div id="wrapper" style="text-align:center">
-							<div class="button competitions" style="display:inline-block; text-align:center; white-space:nowrap">
-								<strong>Competitions</strong>
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div> <!-- End First Row -->
-
-			<!-- Second Row -->
-        	<div class="row carbon-summary" style="padding-top:30px">
-
-				<!-- Graph Column --> 
-				<div class="small-12 medium-4 large-4 columns">
-        			<div class="section group"  style="padding-right:20px">
-						<a class="expandedgraph" style="color: #0000EE; font-size:12px;">
-							<center>Click here for a breakdown of your emissions with tips to reduce them</center>
-						</a>
 						<div id="data-bar-graph" style="width:100%x; height:200px; margin: 0 auto; margin-left:-15px;"></div>
 					</div>
         		</div>
-				
-				<!-- Emissions Column -->
-        		<div class="small-12 medium-4 large-4 columns carbon" style="height:inherit">
-        			<div class="section group" style="padding-left:30px">
+        	</div>
+
+        	<div class="row carbon-summary">
+
+        		<div class="small-12 medium-6 large-6 columns carbon">
+        			<div class="section group">
+        				<div class="summary">
+        					<div class="summary-head"><img src="<?php echo INCLUDES_URL.'/img/plant-tree.png';?>" width="100px" height="auto"></div>
+        					<div class="summary-detail">
+		        			<?php 
+							$deficit =  floatval($carbon_total) - floatval($trees['total_sequestered']);
+							if (floatval($trees['total_sequestered']) < 0 || $trees['total_sequestered']==''): ?>
+		        				<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>Start planting trees to become Carbon Neutral!</center></h3>
+		        			<?php elseif ($deficit > 0):
+		        				//Not Carbon Neutral
+		        				$avg_sequestered = floatval($trees['total_sequestered']) / intval($trees['count']);
+		        				$trees_needed = $deficit / $avg_sequestered;
+		        				if ($trees_needed < 1): 
+		        					$trees_needed = 1;
+		        				endif;
+		        				?>
+		        				<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>You need to plant atleast <br/><?php echo round($trees_needed); ?> trees <br/>to be carbon neutral</center></h3>
+		        			<?php else: // Is Carbon Neutral?>
+		        				<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>You have enough trees to sequester all of your carbon footprint!</center></h3>
+		        			<?php endif;?>
+		        			</div>
+		        			<div id="wrapper" style="text-align: center">
+		        			<div class="button mytree" style="display:inline-block; text-align:center"><strong>My Trees</strong></div>
+		        			<div class="button planttree" style="display:inline-block; text-align:center"><strong>Plant A Tree</strong></div>
+		        		</div>
+		        		    
+		        		</div>
+		        	</div>
+        		</div>
+
+
+        		<div class="small-12 medium-6 large-6 columns carbon" style="height:inherit">
+        			<div class="section group">
+						<div class="section-title">
+							
+						</div>
 						<div class="summary">
 							<div class="summary-head"><img src="<?php echo INCLUDES_URL.'/img/co2cloud-grey.png';?>" width="150px" height="auto"></div>
 							<div class="summary-detail">
@@ -112,41 +133,14 @@ get_header(); ?>
 								<div class="button mycarbon" style="display:inline-block"><strong>My Carbon Emissions</strong></div>
 							</div>
 						</div>
-					</div>
-        		</div>
-				
-				<!-- Trees Column -->
-        		<div class="small-12 medium-4 large-4 columns carbon">
-        			<div class="section group" style="padding-left:30px">
-        				<div class="summary">
-        					<div class="summary-head"><img src="<?php echo INCLUDES_URL.'/img/plant-tree.png';?>" width="100px" height="auto"></div>
-        					<div class="summary-detail">
-								<?php 
-									$deficit =  floatval($carbon_total) - floatval($trees['total_sequestered']);
-									if (floatval($trees['total_sequestered']) < 0 || $trees['total_sequestered']==''): 
-								?>
-		        				<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>Start planting trees to become Carbon Neutral!</center></h3>
-								<?php elseif ($deficit > 0):
-									//Not Carbon Neutral
-									$avg_sequestered = floatval($trees['total_sequestered']) / intval($trees['count']);
-									$trees_needed = $deficit / $avg_sequestered;
-									if ($trees_needed < 1): 
-										$trees_needed = 1;
-									endif;
-		        				?>
-		        				<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>You need to plant atleast <br/><?php echo round($trees_needed); ?> trees <br/>to be carbon neutral</center></h3>
-								<?php else: // Is Carbon Neutral?>
-									<h3 style="margin:0 0 20px; font-size:18px; font-weight:bold;"><center>You have enough trees to sequester all of your carbon footprint!</center></h3>
-								<?php endif;?>
-		        			</div>
-		        			<div id="wrapper" style="text-align:center; white-space:nowrap; padding-right:50px">
-								<div class="button planttree" style="display:inline-block; text-align:center"><strong>Plant A Tree</strong></div>
-								<div class="button mytree" style="display:inline-block; text-align:center"><strong>My Trees</strong></div>
-							</div>
-		        		</div>
-		        	</div>
-        		</div>
-    		</div> <!-- End Second Row -->
+				</div>
+        		</div><!-- .Summary -->
+
+    		</div>
+
+    		
+
+
 	    </div>
 	</div>
 </div>
@@ -156,13 +150,14 @@ get_header(); ?>
 jQuery(function ($) {
     $('#mk-page-introduce').hide();
 	
+	// Begin Sy's Edits
+	
+	/* Sy's Edits: Added function for expanded graph link */
 	$(".expandedgraph").on("click", function(){
      	window.location = "<?php echo get_home_url().'/my-carbon/expanded-graph'?>";
     });
 	
-	$(".competitions").on("click", function(){
-     	window.location = "<?php echo get_home_url().'/my-carbon/competitions'?>";
-    });
+	// End Sy's Edits
 
     $(".myrank").on("click", function(){
      	window.location = "<?php echo get_home_url().'/my-carbon/ranking'?>";
@@ -198,6 +193,11 @@ jQuery(function ($) {
 				$('div#prev').attr("data-prev", first_index );
 				
 				for (i = 0; i < max; i++) { 
+				    //update_list = update_list + '<div class="members-profile">' + member[first_index]['Name'] + '</div>'; 
+				    // update_list = '<div class="small-2 columns"><div class="avatar"><img src="'+ 
+				    // 	members[first_index]["avatar"] + '" width="100" height="100"></div><div class="name"><center>' + 
+				    // 	members[first_index]["user_login"] + '</center></div><div class="sequestered"><center>' + 
+				    // 	members[first_index]["meta_value"] + '</center></div></div>'
 				    var rank = members[first_index]["rank"];
 				    var avatar = members[first_index]["avatar"];
 				    var name = members[first_index]["user_login"];
@@ -208,9 +208,12 @@ jQuery(function ($) {
 				    	deficit * (-1) + '<br/>ton deficit</center></div></div>';
 				    first_index++;
 				}
+
 				
+
 				$('div#members').html(update_list);
 			}
+
 		});
 
 		$('#next').click(function(){
@@ -230,6 +233,7 @@ jQuery(function ($) {
 
 
 				for (i = 0; i < max; i++) { 
+				    //update_list = update_list + '<div class="members-profile">' + member[first_index]['Name'] + '</div>';
 				    var rank = members[first_index]["rank"];
 				    var avatar = members[first_index]["avatar"];
 				    var name = members[first_index]["user_login"];
@@ -240,7 +244,9 @@ jQuery(function ($) {
 				    	deficit * (-1) + '<br/>ton deficit</center></div></div>';
 				    first_index++;
 				}
-				
+
+
+
 				$('div#members').html(update_list);
 			}
 		});
