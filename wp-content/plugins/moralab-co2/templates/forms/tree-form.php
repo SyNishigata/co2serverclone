@@ -1,4 +1,4 @@
-I<?php 
+<?php 
 global $post;
 
 // determine if page is a new blank post

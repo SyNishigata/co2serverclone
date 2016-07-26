@@ -1,6 +1,12 @@
 co2serverclone:
 
 
+Changes to phpMyAdmin co2serverclone db:
+
+- Added table: wp_survey
+
+
+
 Changes to Wordpress via Dashboard:
 
 - Went into Jupiter theme and disabled header on main page and footer on all pages
@@ -17,19 +23,21 @@ Added pages:
 - waste-tips
 - competitions
 - expanded-graph
+- survey
 
 
 
 Added files:
 
-	PICS:  C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\img
+	PICS:  
+	C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\img
 	tips-general1.PNG
 	tips-general2.PNG
 	tips-travel1.PNG
 	tips-travel2.PNG
 
 
-	CODE:
+	CODE:    Remove '\xampp\htdocs'
 
 	- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
 
@@ -51,10 +59,14 @@ Added files:
 
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-waste-tips.php
 
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-survey.php
+	
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-survey2.php
 
 
 
-Changed files: // Remove '\xampp\htdocs'
+
+Changed files:     Remove '\xampp\htdocs'
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\co2.js
 - line 53
