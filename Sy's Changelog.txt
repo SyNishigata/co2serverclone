@@ -23,7 +23,9 @@ Added pages:
 - waste-tips
 - competitions
 - expanded-graph
-- survey
+- survey   ** Dummy Page **
+- survey2  ** Dummy Page **
+- train    ** Dummy Page **
 
 
 
