@@ -37,7 +37,7 @@ Added files:
 	tips-travel2.PNG
 
 
-	CODE:    Remove '\xampp\htdocs' for actual path.
+	CODE:    Remove 'C:\xampp\htdocs' for actual path.
 
 	- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
 
@@ -74,7 +74,7 @@ Replaced files:
 
 
 
-Changed files:     Remove '\xampp\htdocs' for actual path.
+Changed files:     Remove 'C:\xampp\htdocs' for actual path.
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\co2.js
 - line 53
