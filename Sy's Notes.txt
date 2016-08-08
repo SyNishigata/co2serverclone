@@ -8,7 +8,7 @@ Important Directories:   Remove C:\xampp\htdocs for actual path.
 
 Database Notes:
 
-  - Majority of the important pieces of data is stored in the table: wp_posts
+  - Majority of the important pieces of data are stored in the table: wp_posts
 
   - In wp_posts, sort by post_type to help you find specific pieces of data (ex. pages)
 
