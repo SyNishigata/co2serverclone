@@ -23,9 +23,11 @@ Added pages:
 - waste-tips
 - competitions
 - expanded-graph
-- survey   ** Dummy Page **
-- survey2  ** Dummy Page **
-- train    ** Dummy Page **
+
+** Dummy Pages ** 
+- survey  
+- survey2  
+- train    
 
 
 
@@ -61,9 +63,14 @@ Added files:
 
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-waste-tips.php
 
+
+	** Dummy Files ** 
+
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-survey.php
 	
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-survey2.php
+
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\train-template.php
 
 
 
