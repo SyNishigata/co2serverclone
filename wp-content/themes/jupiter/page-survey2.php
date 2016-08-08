@@ -9,6 +9,7 @@
 		/* mulitple row results can be pulled from the database with get_results function 
 		   and outputs an object which is stored in $result */
 		$result = $wpdb->get_results( "SELECT * FROM wp_survey "); 
+		//$result2 = $wpdb->get_results( "SELECT * FROM wp_postmeta WHERE post_id='737' "); 
 
 
 		/* If you require you may print and view the contents of $result object */

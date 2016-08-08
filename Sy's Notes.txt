@@ -15,11 +15,16 @@ Database Notes:
   - Planted trees, emissions, and other forms can be found in wp_posts
 
   - To see the specific attributes of a form, for example planted trees, look under wp_posts and 
-      find the row that matches that specific tree (for help with finding that row, possibly look 
-      under post_modified if you recently entered/modified a tree, it will show when that tree was 
-      last changed).  Once you found the row for the tree in question, look for its ID.  Now go into
-      the wp_postmeta table and sort by post_id and find the ID from the tree in question.  You will
-      now see all the attributes for that tree, such as treeUnit, treeDiameter, etc. 
+	find the row that matches that specific tree (for help with finding that row, possibly look 
+	under post_modified if you recently entered/modified a tree, it will show when that tree was 
+	last changed).  Once you found the row for the tree in question, look for its ID.  Now go into
+	the wp_postmeta table and sort by post_id and find the ID from the tree in question.  You will
+	now see all the attributes for that tree, such as treeUnit, treeDiameter, etc. 
 
   - Note that the above method works for all post types
+
+  - see C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\tree-archive-template.php
+	for examples on php/WP code that queries the tree details that are stored in a wp_post row
+	
+	
 
