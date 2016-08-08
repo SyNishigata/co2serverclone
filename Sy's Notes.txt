@@ -26,5 +26,6 @@ Database Notes:
   - see C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\templates\tree-archive-template.php
 	for examples on php/WP code that queries the tree details that are stored in a wp_post row
 	
-	
+  - see C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\functions.php
+	starting at line 50 to see how trees/emissions are stored into the database
 
