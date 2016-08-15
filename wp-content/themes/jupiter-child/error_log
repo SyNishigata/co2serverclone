@@ -1,0 +1,79 @@
+[05-Jun-2016 10:10:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/configz.php on line 8
+[06-Jun-2016 02:49:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 02:59:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:00:33 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:02:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:03:50 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:04:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:04:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:04:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:05:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:09:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/configz.php on line 8
+[06-Jun-2016 03:10:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:10:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:11:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:11:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:11:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:11:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:15:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:15:43 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:17:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:17:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:17:44 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:18:50 UTC] PHP Notice:  Undefined index: name in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:18:50 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:18:50 UTC] PHP Notice:  Undefined index: privacy in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[06-Jun-2016 03:18:50 UTC] PHP Notice:  Undefined index: location in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 17
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: name in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: privacy in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: location in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: id in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 29
+[07-Jun-2016 01:54:02 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 29
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: name in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: privacy in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: location in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 19
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: id in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 29
+[19-Jun-2016 00:11:37 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 29
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: name in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 25
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 25
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: privacy in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 25
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: location in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 25
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: id in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 35
+[19-Jun-2016 00:13:18 UTC] PHP Notice:  Undefined index: admin in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 35
+[19-Jun-2016 00:16:35 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 4
+[19-Jun-2016 00:16:45 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 4
+[24-Jun-2016 23:45:00 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:45:00 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:45:00 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:56:44 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:56:44 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:56:44 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:04 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:04 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:04 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:32 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:32 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:57:32 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:59:38 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:59:38 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[24-Jun-2016 23:59:38 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:00:21 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:00:21 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:00:21 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:01:06 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:01:06 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:01:06 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:03:09 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:03:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:03:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:04:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:04:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:04:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:06:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:30:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:31:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:33:32 UTC] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:33:32 UTC] PHP Warning:  mysql_real_escape_string(): Access denied for user 'ronthewebsiteguy'@'localhost' (using password: NO) in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28
+[25-Jun-2016 00:33:32 UTC] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/ronthewebsiteguy/public_html/ronlum.com/wp-content/themes/jupiter-child/groupz-add.php on line 28

@@ -18,3 +18,28 @@ body {
 }
 
 */
+
+#create-group {         padding: 5em;
+    border: 2px solid #CAC19F;
+    border-radius: 1em;
+    background: cornsilk;
+    max-width: 50%;
+    margin: 1em auto;
+    box-shadow: 10px 10px 0px #CAC1A1; margin-bottom:3em}
+	
+#create-group h2 { padding-bottom:2em; margin-bottom:2em; border-bottom:1px solid #333; text-align:center }	
+	
+#create-group  select { background-color:white!important}
+
+.griddy td { border:1px solid; }
+
+.griddy tr:hover td { background:#222; color: #ddd; }
+
+#create-group input[type="submit"] { background: #2B3F86; border-radius:2px; 
+    color: white;
+    padding: 1em 3em;
+    border: 0; display:block; margin:0 auto}
+	
+.center { text-align:center}
+
+#verify { font-size:4em; text-align:center; font-weight:bold; color: #777; letter-spacing: 3px }
