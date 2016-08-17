@@ -22,6 +22,7 @@ function get_plugin_template($template) {
 
 /* Register Script Headers */
 function add_header_scripts(){
+	wp_enqueue_style( 'foundation-app', INCLUDES_URL. '/css/app.css', false, null );
 	wp_enqueue_style( 'foundation', INCLUDES_URL.'/css/foundation.min.css', false, null );
 	wp_enqueue_style( 'moralab', INCLUDES_URL.'/css/moralab.css', false, null );
 	//wp_enqueue_script( 'jquery-v1-12', INCLUDES_URL.'/js/jquery-1.12.0.min.js', false, null );	
