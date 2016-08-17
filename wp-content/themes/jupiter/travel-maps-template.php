@@ -3,13 +3,15 @@
 	Template Name: travel-maps
 
 	Almost all of the following code was copied from \wp-content\plugins\moralab-co2\templates\forms\travel-form.php
-	The other pieces of code are get_header() and get_footer(), which are wordpress functions
-	See function add_header_scripts() and add_footer_scripts() in \wp-content\plugins\moralab-co2\includes\functions.php
-	for a list of styles and scripts that are loaded from get_header() and get_footer()
+	The two script src are from the function add_header_scripts() in \wp-content\plugins\moralab-co2\includes\functions.php
+	Also the 'style="width: 350px;height:250px' added on lines 61, 141, and 212 are from the file below
+	\wp-content\plugins\moralab-co2\includes\css\moralab.css 
 */
 
-get_header();
 ?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC7vypkjCVKS6DD_mAaRrMm0aljfF-EhQE&v=3.exp&libraries=places"></script>
 
 <div class="form-group">
 	<!-- Bus Form -->
@@ -56,7 +58,7 @@ get_header();
 			</div>
 		</div>
 		<div class="medium-6 large-6 columns">
-			<div id="busmap"></div>
+			<div id="busmap" style="width: 350px;height:250px"></div>
 		</div>
 	</div>
 	
@@ -136,7 +138,7 @@ get_header();
 			</div>
 		</div>
 		<div class="medium-6 large-6 columns">
-			<div id="trainmap"></div>
+			<div id="trainmap" style="width: 350px;height:250px"></div>
 		</div>
 	</div>
 
@@ -207,7 +209,7 @@ get_header();
 			</div>
 		</div>
 		<div class="medium-6 large-6 columns">
-			<div id="planemap"></div>
+			<div id="planemap" style="width: 350px;height:250px"></div>
 		</div>
 	</div>
 	
@@ -246,7 +248,6 @@ get_header();
     var flightPath;
 	
     function mapInit(map_canvas, from, to, dist) {
-		console.log(map_canvas);
         var map = map_canvas;
         var origin_place_id = null;
         var destination_place_id = null;
@@ -559,5 +560,3 @@ get_header();
         mapInit('planemap', 'pfrom', 'pto', 'pdist');
     }); 
 </script>
-
-<?php get_footer();?>
