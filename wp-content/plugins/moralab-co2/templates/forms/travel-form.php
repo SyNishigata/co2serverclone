@@ -692,7 +692,6 @@ endif;
                         directionsDisplay.setDirections(response);
                         distanceInput.value = response.routes[0].legs[0].distance.value / 1000;
                     } else {
-                        console.log("HERE");
                         request.travelMode = google.maps.TravelMode.DRIVING;
                         directionsService.route(request, function (response, status) {
                             directionsDisplay.setDirections(response);

@@ -27,11 +27,19 @@ Added pages:
 ** Dummy Pages ** 
 - survey  
 - survey2  
-- train    
+- travel-maps    
 
 
 
 Added files:
+
+	FROM RON:
+	C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter-child\
+	configz.php
+	functions.php
+	groupz-add.php
+	error_log
+	style.css
 
 	PICS:  
 	C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\img
@@ -41,7 +49,7 @@ Added files:
 	tips-travel2.PNG
 
 
-	CODE:    Remove 'C:\xampp\htdocs' for actual path.
+	CODE:    
 
 	- C:\xampp\htdocs\co2serverclone\Sy's Changelog.txt
 
@@ -70,7 +78,7 @@ Added files:
 	
 	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\page-survey2.php
 
-	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\train-template.php
+	- C:\xampp\htdocs\co2serverclone\wp-content\themes\jupiter\travel-maps-template.php
 
 
 
@@ -83,7 +91,7 @@ Replaced files:
 
 
 
-Changed files:     Remove 'C:\xampp\htdocs' for actual path.
+Changed files:     
 
 C:\xampp\htdocs\co2serverclone\wp-content\plugins\moralab-co2\includes\js\co2.js
 - line 53
